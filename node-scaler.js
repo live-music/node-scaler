@@ -189,7 +189,7 @@ Vault.read('secret/env').then(async vault => {
       region: 'sfo2',
       size: 's-1vcpu-1gb',
       image: '51408751',
-      ssh_keys: ['20298220', '20398405'],
+      ssh_keys: ['20298220', '20398405', '25260964'],
       backups: 'false',
       ipv6: false,
       user_data: '#cloud-config\nruncmd:\n - /etc/init.d/nginx start\n - /root/update-repo.sh\n - mkdir /root/cue-server/images\n - /usr/bin/yarn --cwd /root/cue-server\n - /root/.nvm/versions/node/v8.15.1/bin/forever start /root/cue-server/server/server.js',
